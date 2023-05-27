@@ -1,0 +1,83 @@
+@import "../../styles/typography";
+@import "../../styles/colors";
+@import "../../styles/spacing";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://i.pinimg.com/originals/70/c3/bb/70c3bb9dbf836775620e91ba8734c74e.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $white;
+  margin: 0;
+
+  .container {
+    background-color: $white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    margin: $baseSpacing auto;
+    max-width: 400px;
+    padding: $baseSpacing;
+    text-align: center;
+
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        padding: 0;
+        padding-bottom: $baseSpacing;
+        margin: 0;
+      }
+
+      label {
+        display: block;
+        margin-bottom: $baseSpacing;
+        text-align: left;
+      }
+
+      input[type="email"],
+      input[type="password"] {
+        border: 1px solid $lightGrey;
+        border-radius: 5px;
+        margin-bottom: $mediumSpacing;
+        padding: $baseSpacing;
+        width: 100%;
+      }
+
+      button[type="submit"] {
+        background-color: $black;
+        border: none;
+        border-radius: 5px;
+        color: $white;
+        cursor: pointer;
+        padding: $baseSpacing;
+        transition: background-color 0.2s ease-in-out;
+        width: 70%;
+        align-self: center;
+
+        &:hover {
+          background-color: $grey;
+        }
+      }
+    }
+
+    p {
+      &:hover {
+        text-decoration: underline $black;
+        cursor: pointer;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .container {
+      max-width: 100%;
+      height: auto;
+      margin: 0;
+    }
+  }
