@@ -1,0 +1,63 @@
+@import "typography";
+@import "base";
+@import "spacing";
+
+@media screen and(min-width:768px) {
+    .big-container {
+        .home-category {
+            flex-direction: row;
+            justify-content: space-between;
+
+            .container-category {
+                max-width: 100%;
+                flex-grow: 1;
+            }
+        }
+
+        .home-ideas {
+            .container {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                .container-intro {
+                    h4 {
+                        padding: $baseSpacing;
+                    }
+                }
+            }
+        }
+
+        .home-promo {
+            .container {
+                img {
+                    width: 500px;
+                    height: 700px;
+                }
+            }
+        }
+
+        footer {
+            .container {
+                a{
+                    align-self: flex-start;
+                    margin-bottom: $baseSpacing;
+                }
+
+                nav {
+                    align-self: flex-start;
+
+                    ul {
+                        flex-direction: row;
+                    }
+                }
+                
+                p{
+                    &:first-of-type{
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}

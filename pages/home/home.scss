@@ -8,6 +8,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    width: fit-content;
+
     .home-main {
         background-color: $black;
         height: 100vh;
@@ -18,6 +20,7 @@
             display: flex;
             align-items: baseline;
             justify-content: space-between;
+
             nav {
                 display: none;
             }
@@ -44,11 +47,21 @@
             display: flex;
             justify-content: space-between;
             width: 200px;
+            
+            a{
+                color: $white;
+                text-decoration: none;
+            }
+
+            button{
+                cursor: pointer;
+                }
+            }
         }
 
         .promoting {
             width: 100%;
-            height: 120px;
+            height: 20%;
 
             h5,
             p {
@@ -65,8 +78,8 @@
         }
 
         .container-description {
-            background-image: url(../../images/sunset-dress.jpeg);
-            background-position: center;
+            background-image: url(../../images/summer-dress1.jpeg);
+            background-position: top;
             background-repeat: no-repeat;
             background-size: cover;
             height: 75%;
@@ -75,10 +88,8 @@
             align-items: center;
             justify-content: space-around;
             flex-direction: column;
-            padding: $mediumSpacing;
 
-            h4,
-            p {
+            h4 {
                 padding: $baseSpacing;
                 margin: 0;
                 color: $white;
@@ -87,65 +98,65 @@
             .button-cta {
                 background-color: $black;
                 color: $white;
-                padding: $baseSpacing $mediumSpacing;
-                font-size: 18px;
+                padding: $baseSpacing $largeSpacing;
+                font-size: 13px;
                 border: none;
                 border-radius: 20px;
+                text-transform: uppercase;
+                letter-spacing: 3px;
                 cursor: pointer;
             }
         }
-    }
 
     .home-category {
-        margin-top: $xlSpacing;
+        margin-top: $xxlSpacing;
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        position: relative;
 
-        img {
-            margin: $baseSpacing;
-            width: 300px;
-            height: 350px;
-            border: 1px transparent;
-            border-radius: 20px;
-        }
-
-        .category {
+        .container-category {
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
-            position: absolute;
+            position: relative;
 
-            h6 {
-                padding: 0;
-                margin: 0;
-                margin-bottom: $baseSpacing;
+            img {
+                margin: $baseSpacing;
+                width: 300px;
+                height: 350px;
+                border: 1px transparent;
+                border-radius: 20px;
             }
 
-            button {
-                background-color: transparent;
-                border: none;
+            .button-group {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 80%;
 
-                &:hover {
-                    text-decoration: underline $black;
-                    cursor: pointer;
+                button {
+                    background-color: transparent;
+                    border: none;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+
+                    &:hover {
+                        text-decoration: underline $black;
+                        cursor: pointer;
+                    }
+                }
+
+                h6 {
+                    padding: 0;
+                    margin: 0;
+                    margin-bottom: $baseSpacing;
                 }
             }
-        }
-
-        .clothing {
-            top: 295px;
-        }
-
-        .shoes {
-            top: 665px;
-        }
-
-        .accessories {
-            top: 1035px;
         }
     }
 
@@ -161,55 +172,113 @@
             flex-direction: column;
             align-items: center;
 
-            &:hover {
-                cursor: pointer;
-            }
-
             img {
-                width: 100%;
-                height: 100%;
+                width: 300px;
+                height: 450px;
             }
 
-            .container-intro{
+            .container-intro {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 position: relative;
+
                 button {
                     position: absolute;
-                    top: 95%;
-                }
-            }
-
-            button {
-                color: $white;
-                background-color: $black;
-                border: none;
-                width: 150px;
-                height: 35px;
-
-                &:hover {
-                    text-decoration: underline $black;
+                    top: 92%;
+                    color: $white;
+                    background-color: $black;
+                    border: solid 1px $black;
+                    border-radius: 10px;
+                    width: 150px;
+                    height: 35px;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
                     cursor: pointer;
                 }
 
-                .night-out {
-                    top: 1300px;
+                h4 {
+                    margin-bottom: $baseSpacing;
+                    text-align: center;
                 }
-
-                .vacation {
-                    top: 1700px;
-                }
-
-                .denim {
-                    top: 1900px;
-                }
-            }
-
-            h3 {
-                margin-bottom: $baseSpacing;
             }
         }
     }
+
+    .home-promo {
+        margin-top: $xlSpacing;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: $xxlSpacing;
+
+            h4 {
+                text-align: center;
+            }
+
+            img {
+                width: 300px;
+                height: 450px;
+                border: solid transparent 1px;
+                border-radius: 10px;
+            }
+        }
+    }
+
+        footer {
+            margin-top: $xlSpacing;
+            background-color: $black;
+    
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: $baseSpacing;
+    
+                a {
+                    text-decoration: none;
+                    color: $white;
+                    text-align: center;
+    
+                    img {
+                        width: 120px;
+                        height: 70px;
+                        padding-top: $baseSpacing;
+                    }
+                }
+    
+                nav {
+                    ul {
+                        flex-direction: column;
+                        gap: $baseSpacing;
+                        display: flex;
+                        text-align: center;
+                        text-transform: uppercase;
+                    }
+                }
+    
+                .social {
+                    display: flex;
+                    width: 200px;
+                    justify-content: space-between;
+    
+                    img {
+                        width: 50px;
+                        height: 60px;
+                    }
+                }
+    
+                p {
+                    color: $white;
+                    text-align: center;
+                }
+            }
+        }    
 }
