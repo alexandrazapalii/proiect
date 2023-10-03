@@ -1,0 +1,346 @@
+@import "../../styles/typography";
+@import "../../styles/base";
+@import "../../styles/colors";
+@import "../../styles/spacing";
+
+.big-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    // width: fit-content;
+
+    header {
+        padding: 0 $largeSpacing;
+        background-color: $black;
+        height: 100px;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        padding-top: 2*$baseSpacing;
+
+        nav {
+            display: none;
+        }
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+
+        a {
+            img {
+                width: 120px;
+                height: 100%;
+            }
+        }
+
+        button {
+            background-color: transparent;
+            border: none;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+            width: 150px;
+
+            button {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        button {
+            color: $grey;
+            margin: $mediumSpacing 0;
+            cursor: pointer;
+            border: none;
+            background-color: transparent;
+            align-self: flex-start;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .images {
+            margin-top: $mediumSpacing;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: $mediumSpacing;
+
+            img{
+                width: 60%;
+                height: 50%;
+                border: solid 1px transparent;
+                border-radius: 20px;
+            }
+        }
+
+        .description {
+            display: flex;
+            flex-direction: column;
+            img {
+                width: 300px;
+                height: 350px;
+            }
+
+            .details {
+                display: flex;
+                flex-direction: column;
+
+                h3 {
+                    color: $darkGrey;
+                    margin: $baseSpacing 0;
+                    text-align: center;
+                }
+
+                p {
+                    margin: $baseSpacing 0;
+                    letter-spacing: 1px;
+                    color: $grey;
+
+                    &:nth-of-type(2) {
+                        align-self: flex-start;
+                        color: $black;
+                        font-weight: bold;
+                    }
+                }
+
+                .cart {
+                    margin: $mediumSpacing 0;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+
+                    button {
+                        text-align: center;
+                        letter-spacing: 1px;
+                        background-color: $black;
+                        width: 40%;
+                        height: 40px;
+                        color: $white;
+                        margin: 0;
+                        padding: 0;
+                        cursor: pointer;
+                    }
+
+                    .amount {
+                        width: 40%;
+                        height: 40px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        background-color: $lightGrey;
+
+                    }
+                }
+            }
+        }
+
+        h4 {
+            align-self: flex-start;
+            margin: $largeSpacing 0;
+        }
+
+        .description-box {
+            display: flex;
+            flex-direction: column;
+            align-self: flex-start;
+
+            .box {
+                display: flex;
+                flex-direction: column;
+
+                .wrapper {
+                    display: flex;
+
+                    p {
+                        &:first-child {
+                            color: $darkGrey;
+                        }
+
+                        &:nth-child(2) {
+                            margin-left: $baseSpacing;
+                        }
+                    }
+                }
+            }
+        }
+
+        h5 {
+            margin-top: $xxlSpacing;
+            margin-bottom: $mediumSpacing;
+        }
+
+        .recommendations {
+            display: flex;
+            flex-direction: column;
+            gap: $mediumSpacing;
+
+            .recommended_product {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h5 {
+                    margin-top: $largeSpacing;
+                }
+
+                button {
+                    align-self: center;
+                    background-color: $black;
+                    color: $white;
+                    letter-spacing: 2px;
+                    width: 35%;
+                    height: 35px;
+                    margin-top: 0;
+                    cursor: pointer;
+                }
+
+                img {
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+        }
+
+    }
+
+    .category {
+        margin-top: $xxlSpacing;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .container-category {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            img {
+                margin: $baseSpacing;
+                width: 300px;
+                height: 350px;
+                border: 1px transparent;
+                border-radius: 20px;
+            }
+
+            .button-group {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 80%;
+
+                button {
+                    background-color: transparent;
+                    border: none;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+
+                    &:hover {
+                        text-decoration: underline $black;
+                        cursor: pointer;
+                    }
+                }
+
+                h6 {
+                    padding: 0;
+                    margin: 0;
+                    margin-bottom: $baseSpacing;
+                }
+            }
+        }
+    }
+
+    .promo {
+        margin-top: $xlSpacing;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: $xxlSpacing;
+
+            h4 {
+                text-align: center;
+            }
+
+            img {
+                width: 300px;
+                height: 450px;
+                border: solid transparent 1px;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    footer {
+        margin-top: $xlSpacing;
+        background-color: $black;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: $baseSpacing;
+
+            a {
+                text-decoration: none;
+                color: $white;
+                text-align: center;
+
+                img {
+                    width: 120px;
+                    height: 70px;
+                    padding-top: $baseSpacing;
+                }
+            }
+
+            nav {
+                ul {
+                    flex-direction: column;
+                    gap: $baseSpacing;
+                    display: flex;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+            }
+
+            .social {
+                display: flex;
+                width: 200px;
+                justify-content: space-between;
+
+                img {
+                    width: 50px;
+                    height: 60px;
+                }
+            }
+
+            p {
+                color: $white;
+                text-align: center;
+            }
+        }
+    }
+}

@@ -42,7 +42,7 @@
     .wrapper {
         display: flex;
         justify-content: space-between;
-        width: 200px;
+        width: 150px;
 
         button {
             cursor: pointer;
@@ -84,8 +84,8 @@
             }
 
             img {
-                width: 400px;
-                height: 500px;
+                width: 300px;
+                height: 350px;
             }
 
             p {
@@ -194,6 +194,7 @@
     footer {
         margin-top: $xlSpacing;
         background-color: $black;
+        
         .container {
             display: flex;
             flex-direction: column;

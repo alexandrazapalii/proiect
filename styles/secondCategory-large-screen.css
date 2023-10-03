@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap");
+body {
+  font-family: "Manrope Medium", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-family: "Manrope Bold", sans-serif;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 58px;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 1.5px;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 1.15px;
+}
+
+h4 {
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 2px;
+}
+
+h5 {
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 1.7px;
+}
+
+h6 {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 1.3px;
+}
+
+button {
+  font-family: "Manrope Medium", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  padding: 0 30px;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 990px) {
+  .big-container header .wrapper {
+    align-self: center;
+  }
+  .big-container header .wrapper a img {
+    padding-bottom: 10px;
+  }
+  .big-container header .wrapper .hamburger {
+    display: none;
+  }
+  .big-container header nav {
+    display: block;
+    align-self: center;
+  }
+  .big-container header nav ul {
+    display: flex;
+    gap: 30px;
+  }
+  .big-container header nav ul li a {
+    cursor: pointer;
+    padding-bottom: 10px;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .big-container header nav ul li a:hover::before {
+    content: " ";
+    width: 50%;
+    height: 2px;
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+    left: 50%;
+  }
+  .big-container .second-category {
+    align-items: flex-start;
+  }
+  .big-container .second-category .product {
+    justify-content: space-between;
+    flex-direction: row;
+    position: relative;
+  }
+  .big-container .second-category .product:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+  .big-container .second-category .product .text {
+    letter-spacing: 1px;
+    width: 60%;
+    margin: 20px;
+  }
+  .big-container .second-category .product .text p {
+    color: #000000;
+    letter-spacing: 3px;
+  }
+  .big-container .second-category .product img {
+    width: 600px;
+    height: 600px;
+    align-self: flex-start;
+    margin-top: 30px;
+  }
+  .big-container .promo .container {
+    position: relative;
+  }
+  .big-container .promo .container h4 {
+    position: absolute;
+    width: 60%;
+    left: 400px;
+    top: 60px;
+    text-align: center;
+  }
+  .big-container .promo .container p {
+    position: absolute;
+    width: 60%;
+    text-align: center;
+    top: 200px;
+    left: 450px;
+    letter-spacing: 2px;
+    line-height: 40px;
+  }
+  .big-container .promo .container img {
+    margin-top: 80px;
+    align-self: flex-start;
+  }
+  .big-container footer .container a {
+    align-self: center;
+  }
+  .big-container footer .container nav ul {
+    gap: 20px;
+  }
+}/*# sourceMappingURL=secondCategory-large-screen.css.map */

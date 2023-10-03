@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap");
+body {
+  font-family: "Manrope Medium", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-family: "Manrope Bold", sans-serif;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 58px;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 1.5px;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 1.15px;
+}
+
+h4 {
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 2px;
+}
+
+h5 {
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 1.7px;
+}
+
+h6 {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 1.3px;
+}
+
+button {
+  font-family: "Manrope Medium", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  padding: 0 30px;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .big-container .container .description {
+    flex-direction: row;
+  }
+  .big-container .container .description .details {
+    margin-left: 30px;
+    align-self: center;
+  }
+  .big-container .container .images {
+    display: none;
+  }
+  .big-container .container .tablet-images {
+    display: flex;
+    gap: 10px;
+  }
+  .big-container .container .tablet-images img {
+    width: 50%;
+  }
+  .big-container .container .tablet-images .column-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .big-container .container .tablet-images .column-images img {
+    width: 100%;
+  }
+  .big-container .container h4 {
+    margin-top: 40px;
+  }
+  .big-container .container .description-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+}/*# sourceMappingURL=product-medium-screen.css.map */

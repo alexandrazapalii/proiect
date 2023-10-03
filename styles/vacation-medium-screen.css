@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap");
+body {
+  font-family: "Manrope Medium", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-family: "Manrope Bold", sans-serif;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 58px;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 1.5px;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 1.15px;
+}
+
+h4 {
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 2px;
+}
+
+h5 {
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 1.7px;
+}
+
+h6 {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 1.3px;
+}
+
+button {
+  font-family: "Manrope Medium", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  padding: 0 30px;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .big-container .vacation_inspo .product img {
+    width: 400px;
+    height: 500px;
+  }
+  .big-container .category {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .big-container .category .container-category {
+    max-width: 100%;
+    flex-grow: 1;
+  }
+  .big-container .promo .container img {
+    width: 500px;
+    height: 700px;
+  }
+  .big-container footer .container a {
+    align-self: flex-start;
+    margin-bottom: 10px;
+  }
+  .big-container footer .container nav {
+    align-self: flex-start;
+  }
+  .big-container footer .container nav ul {
+    flex-direction: row;
+  }
+  .big-container footer .container p:first-of-type {
+    text-align: left;
+  }
+}/*# sourceMappingURL=vacation-medium-screen.css.map */

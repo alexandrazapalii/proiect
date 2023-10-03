@@ -116,7 +116,7 @@ a {
 .big-container .home-main .wrapper {
   display: flex;
   justify-content: space-between;
-  width: 200px;
+  width: 150px;
 }
 .big-container .home-main .wrapper a {
   color: #FFFFFF;

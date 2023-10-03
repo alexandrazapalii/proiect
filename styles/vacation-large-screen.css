@@ -80,36 +80,30 @@ a {
 }
 
 @media screen and (min-width: 990px) {
-  .big-container .home-main {
-    padding-top: 0;
-  }
-  .big-container .home-main .container header {
-    margin-bottom: 20px;
-  }
-  .big-container .home-main .container header .wrapper {
+  .big-container header .wrapper {
     align-self: center;
   }
-  .big-container .home-main .container header .wrapper a img {
-    padding-top: 10px;
+  .big-container header .wrapper a img {
+    padding-bottom: 10px;
   }
-  .big-container .home-main .container header .wrapper .hamburger {
+  .big-container header .wrapper .hamburger {
     display: none;
   }
-  .big-container .home-main .container header nav {
+  .big-container header nav {
     display: block;
     align-self: center;
   }
-  .big-container .home-main .container header nav ul {
+  .big-container header nav ul {
     display: flex;
     gap: 30px;
   }
-  .big-container .home-main .container header nav ul li a {
+  .big-container header nav ul li a {
     cursor: pointer;
     padding-bottom: 10px;
     position: relative;
     text-transform: uppercase;
   }
-  .big-container .home-main .container header nav ul li a:hover::before {
+  .big-container header nav ul li a:hover::before {
     content: " ";
     width: 50%;
     height: 2px;
@@ -119,32 +113,59 @@ a {
     transform: translate(-50%, -50%);
     left: 50%;
   }
+  .big-container .vacation_inspo {
+    align-items: flex-start;
+  }
+  .big-container .vacation_inspo .product {
+    justify-content: space-between;
+    flex-direction: row;
+    position: relative;
+  }
+  .big-container .vacation_inspo .product:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+  .big-container .vacation_inspo .product .text {
+    letter-spacing: 1px;
+    width: 60%;
+    margin: 20px;
+  }
+  .big-container .vacation_inspo .product .text p {
+    color: #000000;
+    letter-spacing: 3px;
+  }
+  .big-container .vacation_inspo .product img {
+    width: 600px;
+    height: 600px;
+    align-self: flex-start;
+    margin-top: 30px;
+  }
+  .big-container .promo .container {
+    position: relative;
+  }
+  .big-container .promo .container h4 {
+    position: absolute;
+    width: 60%;
+    left: 400px;
+    top: 60px;
+    text-align: center;
+  }
+  .big-container .promo .container p {
+    position: absolute;
+    width: 60%;
+    text-align: center;
+    top: 200px;
+    left: 450px;
+    letter-spacing: 2px;
+    line-height: 40px;
+  }
+  .big-container .promo .container img {
+    margin-top: 80px;
+    align-self: flex-start;
+  }
   .big-container footer .container a {
     align-self: center;
   }
   .big-container footer .container nav ul {
     gap: 20px;
   }
-  .big-container .home-promo .container {
-    position: relative;
-  }
-  .big-container .home-promo .container h4 {
-    position: absolute;
-    width: 60%;
-    left: 400px;
-    top: -20px;
-    text-align: center;
-  }
-  .big-container .home-promo .container p {
-    position: absolute;
-    width: 60%;
-    text-align: center;
-    top: 150px;
-    left: 450px;
-    letter-spacing: 2px;
-    line-height: 40px;
-  }
-  .big-container .home-promo .container img {
-    align-self: flex-start;
-  }
-}/*# sourceMappingURL=large-screen.css.map */
+}/*# sourceMappingURL=vacation-large-screen.css.map */

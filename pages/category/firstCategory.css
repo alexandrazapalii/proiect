@@ -114,7 +114,7 @@ a {
 .big-container header .wrapper {
   display: flex;
   justify-content: space-between;
-  width: 200px;
+  width: 150px;
 }
 .big-container header .wrapper button {
   cursor: pointer;
@@ -151,8 +151,8 @@ a {
   color: #46595c;
 }
 .big-container .first-category .product img {
-  width: 400px;
-  height: 500px;
+  width: 300px;
+  height: 350px;
 }
 .big-container .first-category .product p {
   margin: 10px 0;
